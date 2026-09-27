@@ -79,6 +79,19 @@ export const EmergencyProtocolModal: React.FC<EmergencyProtocolModalProps> = ({ 
             </span>
           </div>
 
+          {/* 100% Completion Badge */}
+          {checkedSteps.every(Boolean) && (
+            <div className="bg-emerald-50 border border-emerald-300 text-emerald-900 text-xs p-3 rounded-xl flex items-center justify-between font-bold animate-fadeIn">
+              <div className="flex items-center space-x-2">
+                <CheckSquare className="w-4 h-4 text-emerald-600 shrink-0" />
+                <span>All 4 Protocol Checks Verified — Flawed Choice Provably Identified!</span>
+              </div>
+              <span className="bg-emerald-600 text-white text-[11px] px-2.5 py-1 rounded-full font-bold shadow-xs">
+                100% Completed
+              </span>
+            </div>
+          )}
+
           {/* Interactive Checklist */}
           <div className="space-y-4">
             {steps.map((item, index) => {

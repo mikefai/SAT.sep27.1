@@ -773,7 +773,7 @@ export const MockExamModule: React.FC = () => {
               ) : (
                 <button
                   onClick={handleAttemptSubmit}
-                  className="px-6 py-2.5 rounded-xl text-xs font-extrabold bg-emerald-600 hover:bg-emerald-700 text-white flex items-center space-x-1.5 transition cursor-pointer shadow-md shadow-emerald-600/30 animate-bounce"
+                  className="px-6 py-2.5 rounded-xl text-xs font-extrabold bg-emerald-600 hover:bg-emerald-700 text-white flex items-center space-x-1.5 transition-all duration-200 cursor-pointer shadow-md shadow-emerald-600/30 hover:scale-[1.02] ring-2 ring-emerald-400/40"
                 >
                   <ShieldCheck className="w-4.5 h-4.5" />
                   <span>Submit Exam & View Report</span>
