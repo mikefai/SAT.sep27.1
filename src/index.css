@@ -10,9 +10,11 @@
   }
 }
 
-/* Custom passage typography */
+/* Harmonized passage typography matching Digital SAT Bluebook standards */
 .font-passage {
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.011em;
+  line-height: 1.8;
 }
 
 /* Custom scrollbars */
